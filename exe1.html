@@ -1,0 +1,50 @@
+<!-- 
+    EXE1 - Painel de informações
+
+    Altere o css para fatorar o código HTML seguindo a imagem: 
+    https://drive.google.com/open?id=1wolaaQem729G3-h39lXGcpygqMNoptHL
+
+  
+    As regras específicas são:
+     -- Tipo de fonte: Verdana 
+     -- Tamanho da fonte: 16 pixels 
+     -- Largura do painel: 400 pixels
+     -- Alinhamento: centralizado horizontalmente (texto) 
+     -- Espaçamento entre linhas: duplo 
+     -- Cor do texto: Vermelho (red)
+     -- Borda com espessura 1px cor preta (black)
+     -- Textos normais, exceto os textos pretos (black) que estão em negrito
+-->
+<style>
+    *{
+        color: #f00; /*Cor do texto: Vermelho (red)*/
+        font-family: Verdana;  /*Tipo de fonte: Verdana*/
+        font-size:16px;
+        font-weight: normal;
+        
+        
+    }
+    div{
+        width: 400px; /*Largura do painel: 400 pixels*/
+        text-align: center; /*Alinhamento: centralizado horizontalmente (texto) */
+        line-height: 30px; /*Espaçamento entre linhas: duplo, usado como 30px */
+        border: 1px black solid; /*Borda com espessura 1px cor preta (black)*/
+    }
+    span{
+        font-weight: bold; /*Textos normais, exceto os textos pretos (black) que estão em negrito*/
+        color: black ; 
+    } 
+</style>
+<div class="painel">
+    <h1>
+        Faculdade Impacta de Tecnologia
+    </h1>
+    
+    <h2>
+        <span>Curso:</span> Análise e Desenvolvimento de Sistemas
+    </h2>
+    
+    <h3>
+        <span>Disciplina:</span> Tecnologais Web <!-- seria "Tecnologia", mas seguir como esta na imagem solicidada-->
+    </h3>
+</div>
